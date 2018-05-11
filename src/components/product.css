@@ -1,0 +1,34 @@
+.default .product-box {
+  background-color: red;
+  background-color: var(--theme-primary-color);
+  opacity: 0.5;
+  color: white;
+  padding: 15px 5px;
+  border-radius: 3px;
+  transition-duration: .3s; }
+  .default .product-box:hover {
+    cursor: pointer;
+    opacity: 1; }
+
+.default .w-4 {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 10px; }
+
+.default .w-3 {
+  box-sizing: border-box;
+  width: 33.3%;
+  padding: 15px; }
+
+.default .w-2 {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px; }
+
+.default .w-1 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px; }
+
+.moon .red {
+  color: red; }

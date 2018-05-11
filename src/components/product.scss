@@ -1,0 +1,48 @@
+@import 'assets/stylesheets/vars.scss';
+@import 'assets/stylesheets/mixins.scss';
+
+.default {
+  .product-box {
+    @include variable(background-color, --theme-primary-color, red);
+    opacity: 0.5;
+    color: white;
+    padding: 15px 5px;
+    border-radius: 3px;
+    transition-duration: .3s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+
+  .w-4 {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+  }
+
+  .w-3 {
+    box-sizing: border-box;
+    width: 33.3%;
+    padding: 15px;
+  }
+
+  .w-2 {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .w-1 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+  }
+}
+
+.moon {
+  .red {
+    color: red;
+  }
+}
