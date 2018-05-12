@@ -20,3 +20,31 @@ body {
 .u-wrap {
   flex-wrap: wrap;
 }
+
+.icon-car {
+  background-image: url("/car.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-pets {
+  background-image: url("/pets.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-health {
+  background-image: url("/health.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-house {
+  background-image: url("/house.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

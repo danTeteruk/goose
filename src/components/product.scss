@@ -3,46 +3,148 @@
 
 .default {
   .product-box {
-    @include variable(background-color, --theme-primary-color, red);
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.75);
     opacity: 0.5;
-    color: white;
-    padding: 15px 5px;
+    padding: 5px 5px;
+    height: 30px;
     border-radius: 3px;
     transition-duration: .3s;
+    display: flex;
 
     &:hover {
       cursor: pointer;
       opacity: 1;
     }
+
+    span {
+      line-height: 30px;
+    }
+  }
+
+  .product-box.active {
+    background-color: lighten(black, 85%) !important;
+    opacity: 1;
+  }
+
+  .product-box.suggested {
+    background-color: lighten(blue, 25%);
+    opacity: 1;
+  }
+
+  .icon-box {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    @include variable(background-color, --theme-primary-color, red);
+    border-radius: 3px;
+    display: flex;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    margin: auto;
   }
 
   .w-4 {
     box-sizing: border-box;
     width: 25%;
-    padding: 10px;
+    padding: 8px 10px;
   }
 
   .w-3 {
     box-sizing: border-box;
     width: 33.3%;
-    padding: 15px;
+    padding: 8px 15px;
   }
 
   .w-2 {
     box-sizing: border-box;
     width: 50%;
-    padding: 20px;
+    padding: 8px 20px;
   }
 
   .w-1 {
     box-sizing: border-box;
     width: 100%;
-    padding: 25px;
+    padding: 8px 25px;
   }
 }
 
 .moon {
-  .red {
-    color: red;
+  .product-box {
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.75);
+    opacity: 0.5;
+    padding: 11px;
+    height: 90px;
+    width: 90px;
+    border-radius: 3px;
+    transition-duration: .3s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    .title-holder {
+      position: absolute;
+      display: flex;
+      bottom: 11px;
+      width: 90px;
+
+      span {
+        margin: auto;
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  .product-box.active {
+    background-color: lighten(black, 85%) !important;
+    opacity: 1;
+  }
+
+  .product-box.suggested {
+    background-color: lighten(blue, 25%);
+  }
+
+  .icon-box {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    @include variable(background-color, --theme-primary-color, red);
+    border-radius: 3px;
+    display: flex;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+
+  .w-4 {
+    margin: 0 10px
+  }
+
+  .w-3 {
+    margin: 0 10px
+
+  }
+
+  .w-2 {
+    margin: 0 10px
+
+  }
+
+  .w-1 {
+    margin: 0 10px
+
   }
 }

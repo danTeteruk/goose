@@ -8,8 +8,66 @@
   .default .box-flow {
     width: 100%;
     max-width: 800px;
-    height: 400px;
+    min-height: 400px;
     background-color: white;
     border-radius: 3px;
     margin: auto;
-    padding: 15px; }
+    padding: 15px;
+    position: relative; }
+  .default .show {
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+    cursor: pointer; }
+  .default .link {
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 8px 20px;
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+    color: var(--theme-primary-color);
+    font-weight: bold; }
+
+.moon {
+  background-color: red;
+  background-color: var(--theme-primary-color); }
+  .moon .box {
+    width: 100%;
+    display: flex;
+    height: 100vh; }
+  .moon .show {
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+    cursor: pointer; }
+  .moon .box-flow {
+    width: 100%;
+    max-width: 800px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 3px;
+    margin: auto;
+    padding: 15px;
+    position: relative; }
+  .moon .link {
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 8px 20px;
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+    color: var(--theme-primary-color);
+    font-weight: bold; }

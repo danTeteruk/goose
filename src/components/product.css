@@ -1,34 +1,113 @@
 .default .product-box {
-  background-color: red;
-  background-color: var(--theme-primary-color);
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
   opacity: 0.5;
-  color: white;
-  padding: 15px 5px;
+  padding: 5px 5px;
+  height: 30px;
   border-radius: 3px;
-  transition-duration: .3s; }
+  transition-duration: .3s;
+  display: flex; }
   .default .product-box:hover {
     cursor: pointer;
     opacity: 1; }
+  .default .product-box span {
+    line-height: 30px; }
+
+.default .product-box.active {
+  background-color: #d9d9d9 !important;
+  opacity: 1; }
+
+.default .product-box.suggested {
+  background-color: #8080ff;
+  opacity: 1; }
+
+.default .icon-box {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: red;
+  background-color: var(--theme-primary-color);
+  border-radius: 3px;
+  display: flex; }
+
+.default .icon {
+  width: 25px;
+  height: 25px;
+  margin: auto; }
 
 .default .w-4 {
   box-sizing: border-box;
   width: 25%;
-  padding: 10px; }
+  padding: 8px 10px; }
 
 .default .w-3 {
   box-sizing: border-box;
   width: 33.3%;
-  padding: 15px; }
+  padding: 8px 15px; }
 
 .default .w-2 {
   box-sizing: border-box;
   width: 50%;
-  padding: 20px; }
+  padding: 8px 20px; }
 
 .default .w-1 {
   box-sizing: border-box;
   width: 100%;
-  padding: 25px; }
+  padding: 8px 25px; }
 
-.moon .red {
-  color: red; }
+.moon .product-box {
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
+  opacity: 0.5;
+  padding: 11px;
+  height: 90px;
+  width: 90px;
+  border-radius: 3px;
+  transition-duration: .3s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px; }
+  .moon .product-box:hover {
+    cursor: pointer;
+    opacity: 1; }
+  .moon .product-box .title-holder {
+    position: absolute;
+    display: flex;
+    bottom: 11px;
+    width: 90px; }
+    .moon .product-box .title-holder span {
+      margin: auto;
+      color: white;
+      font-weight: bold; }
+
+.moon .product-box.active {
+  background-color: #d9d9d9 !important;
+  opacity: 1; }
+
+.moon .product-box.suggested {
+  background-color: #8080ff; }
+
+.moon .icon-box {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  background-color: red;
+  background-color: var(--theme-primary-color);
+  border-radius: 3px;
+  display: flex; }
+
+.moon .icon {
+  width: 50px;
+  height: 50px;
+  margin: auto; }
+
+.moon .w-4 {
+  margin: 0 10px; }
+
+.moon .w-3 {
+  margin: 0 10px; }
+
+.moon .w-2 {
+  margin: 0 10px; }
+
+.moon .w-1 {
+  margin: 0 10px; }
